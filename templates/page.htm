@@ -1,0 +1,9 @@
+{% import 'dialogs.htm' as dlg %}
+{% include 'header.htm' %}
+<ul>
+    {% for u in user -%}
+    <li>{{u.name}}
+        {% endfor -%}
+</ul>
+{{ dlg.dialog_1('Внимание', 'Это тестовый диалог') }}
+{% include 'footer.htm' %}
